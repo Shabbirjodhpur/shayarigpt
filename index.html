@@ -41,7 +41,7 @@
     padding: 4px 16px;
     border-radius: 16px;
     color:white;
-" onClick='decrement()'>&gt;</button>
+" onClick='increment()'>&gt;</button>
 </div>
             
             
@@ -111,11 +111,13 @@ var global_shayari_arr;
 		document.getElementById('shayari-text').innerText = global_shayari_arr[index].shayari
 	}
 	function decrement(){
+		console.log(index)
 		if(index==0) return;
 		index = index - 1;
 		document.getElementById('shayari-text').innerText = global_shayari_arr[index].shayari
 	}
 	function increment(){
+		console.log(index)
 		if(index==(global_shayari_arr.length-1)) return;
 		index = index + 1;
 		document.getElementById('shayari-text').innerText = global_shayari_arr[index].shayari
